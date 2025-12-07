@@ -26,18 +26,6 @@ function showCart() {
 }
 
 
-// Очистить корзину
-function clearCart() {
-    cart = [];
-    localStorage.setItem("cart", JSON.stringify(cart));
-    alert("Корзина очищена");
-}
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const cartIcon = document.createElement("div");
