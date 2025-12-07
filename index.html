@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<script>
+    (function (d, w, c) {
+        w.ChatraID = 'JjuxsSLDumtfrHTJ6';
+        var s = d.createElement('script');
+        w[c] = w[c] || function () {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин одежды</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <!-- ================= ШАПКА ================= -->
+    <header class="header">
+        <div class="logo-with-text">
+            <img src="/img/ges.jpg" alt="logo" class="logo-img">
+            <div class="logo-text">
+                <div class="logo-name">GusStoreMd</div>
+                <div class="logo-subtext">Лучший магазин одежды</div>
+            </div>
+        </div>
+
+        <nav class="menu">
+            <a href="#about">О нас</a>
+            <a href="#products">Товары</a>
+            <a href="#order">Заказ</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+
+    <!-- =============== ПРИВЕТСТВИЕ =============== -->
+    <section class="hero" id="about">
+        <h1>Добро пожаловать в наш магазин</h1>
+        <p>У нас вы найдёте качественную одежду по отличным ценам.</p>
+    </section>
+    <!-- =============== ВИДЕО-ПРЕЗЕНТАЦИЯ =============== -->
+    <section class="video-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Видео с нашими товарами</h2>
+
+            <div class="video-wrapper">
+                <video controls autoplay muted loop>
+                    <source src="/video/videoplayback.mp4" type="video/mp4">
+                    .
+                </video>
+            </div>
+        </div>
+    </section>
+    <!-- =============== ТОВАРЫ =============== -->
+    <section id="products" class="container py-5">
+        <h2 class="text-center mb-4">Наши товары</h2>
+
+        <div class="row g-4">
+
+            <!-- Карточка товара 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/img/image.png" class="card-img-top" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title">Футболка Chrome Hearts</h5>
+                        <p class="card-text">Стильная удобная футболка высокого качества.</p>
+                        <p><strong>Цена: 350 MDL</strong></p>
+                        <button onclick="addToCart('Футболка Chrome Hearts', 350)" class="btn btn-primary w-100">В
+                            корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/img/6744a926763c6094201114.png" class=" card-img-top" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title">Худи Stone island x Supreme</h5>
+                        <p class="card-text">Тёплое качественное худи на каждый день.</p>
+                        <p><strong>Цена: 750 MDL</strong></p>
+                        <button onclick="addToCart('Худи Stone island x Supreme', 750)" class="btn btn-primary w-100"> В
+                            корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/img/A-Bathing-Ape-Bapesta-Shark-Black.jpg" class="card-img-top" alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title">Кроссовки Bape Sta</h5>
+                        <p class="card-text">Удобные лёгкие кроссовки.</p>
+                        <p><strong>Цена: 1200 MDL</strong></p>
+                        <button onclick="addToCart('Кроссовки Bape Sta', 1200)" class="btn btn-primary w-100"> В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка товара 4 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <img src="/img/Moncler-Maya-70-by-Palm-Angels-Jacket-Bright-White-5.avif" class="card-img-top"
+                        alt="product image">
+                    <div class="card-body">
+                        <h5 class="card-title">Куртка Moncler x Palm Angels</h5>
+                        <p class="card-text">Теплый пуховик для холодных зим</p>
+                        <p><strong>Цена: 1980 MDL</strong></p>
+                        <button onclick="addToCart('Куртка Moncler x Palm Angels', 1980)" class="btn btn-primary w-100">
+                            В корзину
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =============== ЗАКАЗ =============== -->
+    <section class="order" id="order">
+        <h2>Сделать заказ</h2>
+
+        <form class="order-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="text" placeholder="Телефон" required>
+            <input type="text" placeholder="Название товара" required>
+            <button type="submit">Отправить заказ</button>
+        </form>
+    </section>
+
+    <!-- =============== ОТЗЫВЫ =============== -->
+    <section class="reviews" id="reviews">
+        <h2>Отзывы покупателей</h2>
+
+        <div class="review">
+            <strong>Андрей:</strong> Отличное качество и быстрая доставка!
+        </div>
+
+        <div class="review">
+            <strong>Мария:</strong> Заказываю не в первый раз — всё супер!
+        </div>
+    </section>
+
+    <!-- =============== КОНТАКТЫ + КАРТА =============== -->
+    <section class="contacts" id="contacts">
+        <h2>Контакты</h2>
+
+        <p>Инстаграм: gus.store_md
+        <p>
+        <p>Адрес: Кишинёв, центр</p>
+
+        <h3>Мы на карте</h3>
+        <div id="map"></div>
+    </section>
+
+    <!-- =============== ПОДВАЛ =============== -->
+    <footer class="footer">
+        © 2025 Магазин одежды. Все права защищены.
+    </footer>
+
+    <!-- =========== Яндекс Карта =========== -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script>
+        ymaps.ready(() => {
+            const map = new ymaps.Map("map", {
+                center: [47.0105, 28.8638], // Кишинёв
+                zoom: 12
+            });
+        });
+    </script>
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
